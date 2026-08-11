@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هنوز نرسیدیم!</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Vazirmatn Font -->
+    <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.0/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+
+    <!-- پیکربندی اصولی فونت در تیلویند -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // تنظیم وزیرمتن به عنوان فونت اصلی سیستم
+                        sans: ['Vazirmatn', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* اعمال قطعی فونت برای کل صفحه */
+        body, * {
+            font-family: 'Vazirmatn', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#0a1024] flex items-center justify-center p-4 relative font-sans antialiased text-white">
+    
+    <div class="w-full max-w-[420px]">
+        <!-- کادر اصلی -->
+        <div class="bg-[#142042] border border-[#243563] shadow-2xl rounded-[2.5rem] p-8 sm:p-10 text-center flex flex-col items-center">
+            
+            <!-- آیکون ساعت -->
+            <div class="mb-8 mt-2">
+                <div class="w-24 h-24 rounded-full flex items-center justify-center border-2 border-[#2b3f75] bg-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#60a5fa]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- متن اصلی -->
+            <h1 class="text-xl sm:text-2xl font-bold text-[#7dd3fc] mb-6 leading-[2.2] tracking-wide">
+                داداش چقد عجله داری<br>
+                صبر کن هنوز نرسیدیم که :)
+            </h1>
+
+            <!-- متن توضیحات -->
+            <p class="text-[#94a3b8] text-sm sm:text-[15px] leading-relaxed mb-10 px-2">
+                این اپیزود هنوز آماده نشده یا سرورش در حال ساخته. یه کم دیگه بهمون فرصت بده، به زودی راه‌اندازی میشه!
+            </p>
+
+            <!-- دکمه بازگشت -->
+            <a href="../../" 
+               class="w-full flex items-center justify-center gap-3 px-6 py-4 bg-[#3b82f6] hover:bg-blue-600 text-white font-medium text-base rounded-2xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-blue-500/20">
+                <span class="whitespace-nowrap">بازگشت به لیست اپیزودها</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+            
+        </div>
+    </div>
+
+</body>
+</html>
